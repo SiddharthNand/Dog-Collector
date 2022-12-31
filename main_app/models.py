@@ -10,4 +10,4 @@ class Dog(models.Model):
         return f"{self.name} - {self.age}"
     
     def get_absolute_url(self):
-        return reverse('detail', kwargs={'cat_id': self.id})
+        return reverse('detail', kwargs={'dog_id': self.id})
